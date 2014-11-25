@@ -11,11 +11,11 @@
 		28E4EAF61A251AE90008ECC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EAF51A251AE90008ECC7 /* AppDelegate.m */; };
 		28E4EAF91A251AE90008ECC7 /* BurgerMenuObjC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EAF71A251AE90008ECC7 /* BurgerMenuObjC.xcdatamodeld */; };
 		28E4EAFC1A251AE90008ECC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EAFB1A251AE90008ECC7 /* ViewController.m */; };
-		28E4EAFF1A251AE90008ECC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E4EAFD1A251AE90008ECC7 /* Main.storyboard */; };
 		28E4EB011A251AE90008ECC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E4EB001A251AE90008ECC7 /* Images.xcassets */; };
 		28E4EB041A251AE90008ECC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E4EB021A251AE90008ECC7 /* LaunchScreen.xib */; };
 		28E4EB101A251AE90008ECC7 /* BurgerMenuObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EB0F1A251AE90008ECC7 /* BurgerMenuObjCTests.m */; };
 		28E4EB1B1A251F8E0008ECC7 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EB1A1A251F8E0008ECC7 /* MenuTableViewCell.m */; };
+		28E4EB1D1A2532CC0008ECC7 /* menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E4EB1C1A2532CC0008ECC7 /* menu-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		28E4EAF81A251AE90008ECC7 /* BurgerMenuObjC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BurgerMenuObjC.xcdatamodel; sourceTree = "<group>"; };
 		28E4EAFA1A251AE90008ECC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		28E4EAFB1A251AE90008ECC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		28E4EAFE1A251AE90008ECC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28E4EB001A251AE90008ECC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28E4EB031A251AE90008ECC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		28E4EB091A251AE90008ECC7 /* BurgerMenuObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgerMenuObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +44,7 @@
 		28E4EB0F1A251AE90008ECC7 /* BurgerMenuObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurgerMenuObjCTests.m; sourceTree = "<group>"; };
 		28E4EB191A251F8E0008ECC7 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
 		28E4EB1A1A251F8E0008ECC7 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		28E4EB1C1A2532CC0008ECC7 /* menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				28E4EAFB1A251AE90008ECC7 /* ViewController.m */,
 				28E4EB191A251F8E0008ECC7 /* MenuTableViewCell.h */,
 				28E4EB1A1A251F8E0008ECC7 /* MenuTableViewCell.m */,
-				28E4EAFD1A251AE90008ECC7 /* Main.storyboard */,
+				28E4EB1C1A2532CC0008ECC7 /* menu-50.png */,
 				28E4EB001A251AE90008ECC7 /* Images.xcassets */,
 				28E4EB021A251AE90008ECC7 /* LaunchScreen.xib */,
 				28E4EAF71A251AE90008ECC7 /* BurgerMenuObjC.xcdatamodeld */,
@@ -207,9 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E4EAFF1A251AE90008ECC7 /* Main.storyboard in Resources */,
 				28E4EB041A251AE90008ECC7 /* LaunchScreen.xib in Resources */,
 				28E4EB011A251AE90008ECC7 /* Images.xcassets in Resources */,
+				28E4EB1D1A2532CC0008ECC7 /* menu-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28E4EAFD1A251AE90008ECC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28E4EAFE1A251AE90008ECC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28E4EB021A251AE90008ECC7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
