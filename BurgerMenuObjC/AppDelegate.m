@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ViewController *rootViewController = [[ViewController alloc] init];
+    ViewController *rootViewController = [[[ViewController alloc] init] autorelease];
     rootViewController.view.backgroundColor = [UIColor whiteColor];
     [self.window addSubview:rootViewController.view];
     self.window.rootViewController = rootViewController;

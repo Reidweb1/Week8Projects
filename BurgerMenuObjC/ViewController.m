@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpProperties];
-    //[self.view insertSubview: self.blackViewController.view belowSubview:self.menuButton];
     [self.blackViewController didMoveToParentViewController:self];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -33,7 +32,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MenuTableViewCell *cell = [[MenuTableViewCell alloc] init];
+    MenuTableViewCell *cell = [[[MenuTableViewCell alloc] init] autorelease];
+    cell.backgroundColor = [UIColor darkGrayColor];
     cell.mainLabel.text = @"Menu";
     return cell;
 }
@@ -43,31 +43,29 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    self.tableView.frame = CGRectMake(self.view.frame.origin.x - 200, self.view.frame.origin.y, 200, self.view.frame.size.height);
     [UIView animateWithDuration:0.5 animations:^{
-        [self.view layoutIfNeeded];
+        self.tableView.frame = CGRectMake(self.view.frame.origin.x - 200, self.view.frame.origin.y, 200, self.view.frame.size.height);
     }];
 }
 
 - (void)setUpProperties {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x - 200, self.view.frame.origin.y, 200, self.view.frame.size.height) style:UITableViewStylePlain];
+    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x - 200, self.view.frame.origin.y, 200, self.view.frame.size.height) style:UITableViewStylePlain] autorelease];
+    self.tableView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.tableView];
     
-    self.menuButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame), 50, 50)];
-    self.menuButton.imageView.image = [[UIImage alloc] initWithContentsOfFile:@"menu-50"];
-    self.menuButton.backgroundColor = [UIColor greenColor];
+    self.menuButton = [[[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame), CGRectGetMidY(self.view.frame), 50, 50)] autorelease];
+    [self.menuButton setImage: [UIImage imageNamed:@"menu-50"] forState:UIControlStateNormal];
     [self.menuButton addTarget:self action:@selector(menuButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.menuButton];
     
-    self.blackViewController = [[UIViewController alloc] init];
+    self.blackViewController = [[[UIViewController alloc] init] autorelease];
     self.blackViewController.view.frame = self.view.frame;
     self.blackViewController.view.backgroundColor = [UIColor grayColor];
 }
 
 - (void) menuButtonTouched:(id)sender {
-    self.tableView.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, 200, self.view.frame.size.height);
     [UIView animateWithDuration:1.0 delay:0.0 usingSpringWithDamping:0.75 initialSpringVelocity:0.75 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [self.view layoutIfNeeded];
+        self.tableView.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, 200, self.view.frame.size.height);
     } completion:nil];
 }
 
