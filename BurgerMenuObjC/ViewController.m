@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MenuTableViewCell.h"
+#import "CustomCoreGraphicsView.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIView *backgroundTableView;
@@ -24,6 +25,9 @@
     [self.blackViewController didMoveToParentViewController:self];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    CustomCoreGraphicsView *customView = [[CustomCoreGraphicsView alloc] init];
+    
+    [self.view addSubview:customView];
 }
 
 - (void)didReceiveMemoryWarning {

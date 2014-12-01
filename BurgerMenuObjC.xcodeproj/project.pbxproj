@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B5DCAB1A2D2898005F3BE5 /* CustomCoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B5DCAA1A2D2898005F3BE5 /* CustomCoreGraphicsView.m */; };
 		28E4EAF31A251AE90008ECC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EAF21A251AE90008ECC7 /* main.m */; };
 		28E4EAF61A251AE90008ECC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EAF51A251AE90008ECC7 /* AppDelegate.m */; };
 		28E4EAF91A251AE90008ECC7 /* BurgerMenuObjC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28E4EAF71A251AE90008ECC7 /* BurgerMenuObjC.xcdatamodeld */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28B5DCA91A2D2898005F3BE5 /* CustomCoreGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCoreGraphicsView.h; sourceTree = "<group>"; };
+		28B5DCAA1A2D2898005F3BE5 /* CustomCoreGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCoreGraphicsView.m; sourceTree = "<group>"; };
 		28E4EAED1A251AE90008ECC7 /* BurgerMenuObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerMenuObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E4EAF11A251AE90008ECC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E4EAF21A251AE90008ECC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				28E4EAFB1A251AE90008ECC7 /* ViewController.m */,
 				28E4EB191A251F8E0008ECC7 /* MenuTableViewCell.h */,
 				28E4EB1A1A251F8E0008ECC7 /* MenuTableViewCell.m */,
+				28B5DCA91A2D2898005F3BE5 /* CustomCoreGraphicsView.h */,
+				28B5DCAA1A2D2898005F3BE5 /* CustomCoreGraphicsView.m */,
 				28E4EB1C1A2532CC0008ECC7 /* menu-50.png */,
 				28E4EB001A251AE90008ECC7 /* Images.xcassets */,
 				28E4EB021A251AE90008ECC7 /* LaunchScreen.xib */,
@@ -232,6 +237,7 @@
 				28E4EB1B1A251F8E0008ECC7 /* MenuTableViewCell.m in Sources */,
 				28E4EAFC1A251AE90008ECC7 /* ViewController.m in Sources */,
 				28E4EAF31A251AE90008ECC7 /* main.m in Sources */,
+				28B5DCAB1A2D2898005F3BE5 /* CustomCoreGraphicsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				28E4EB151A251AE90008ECC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28E4EB161A251AE90008ECC7 /* Build configuration list for PBXNativeTarget "BurgerMenuObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				28E4EB181A251AE90008ECC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
