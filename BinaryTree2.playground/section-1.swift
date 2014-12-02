@@ -50,12 +50,14 @@ class BinaryTree {
     
     func remove (value: Int) {
         if value == self.value {
-            if self.rightTree != nil {
-                
-            } else if self.leftTree != nil {
-                
-            } else {
+            if self.rightTree == nil && self.leftTree == nil {
                 self.value = nil
+            } else if self.rightTree != nil && self.leftTree == nil {
+                self.value = self.rightTree?.value
+                self.rightTree = self.rightTree?.rightTree
+            } else {
+                self.value = self.leftTree?.value
+                self.leftTree = self.leftTree?.leftTree
             }
         } else {
             if value > self.value {
@@ -85,5 +87,8 @@ newTree.insert(5)
 newTree.insert(2)
 newTree.insert(1)
 newTree.insert(6)
+
+newTree.remove(2)
+
 var count = BinaryTree.count(newTree)
 
