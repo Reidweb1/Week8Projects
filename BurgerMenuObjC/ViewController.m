@@ -26,7 +26,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     CustomCoreGraphicsView *customView = [[CustomCoreGraphicsView alloc] init];
-    
+    [customView drawRect:CGRectMake(150, 150, 200, 200)];
     [self.view addSubview:customView];
 }
 
